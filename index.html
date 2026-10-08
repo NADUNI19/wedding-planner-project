@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EverAfter - Wedding Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Ever<span>After</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#checklist">Checklist</a></li>
+                <li><a href="#budget">Budget</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">YOUR PERFECT DAY STARTS HERE</p>
+
+            <h1>
+                Plan Your
+                <span>Dream Wedding</span>
+            </h1>
+
+            <p>
+                We help you organize every beautiful detail
+                of your special day.
+            </p>
+
+            <a href="#services" class="btn">
+                Explore Services
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <p>WHO WE ARE</p>
+            <h2>Making Your Dream Wedding a Reality</h2>
+        </div>
+
+        <div class="about-content">
+
+            <div>
+                <p>
+                    EverAfter is a simple wedding planning platform
+                    designed to help couples organize their special day
+                    easily and stress-free.
+                </p>
+
+                <p>
+                    From choosing a venue to managing your budget,
+                    we help you keep everything organized in one place.
+                </p>
+            </div>
+
+            <div class="about-box">
+                <h3>✨ Your Dream</h3>
+                <p>Our Plan</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Services -->
+    <section id="services" class="section services-section">
+
+        <div class="section-title">
+            <p>WHAT WE OFFER</p>
+            <h2>Our Wedding Services</h2>
+        </div>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <div class="icon">💐</div>
+                <h3>Decoration</h3>
+                <p>
+                    Beautiful wedding decorations
+                    that match your dream theme.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">📍</div>
+                <h3>Venue Planning</h3>
+                <p>
+                    Find and organize the perfect
+                    wedding location.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">📸</div>
+                <h3>Photography</h3>
+                <p>
+                    Capture every beautiful moment
+                    of your special day.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <div class="icon">🍰</div>
+                <h3>Catering</h3>
+                <p>
+                    Plan delicious food and drinks
+                    for your guests.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Checklist -->
+    <section id="checklist" class="section">
+
+        <div class="section-title">
+            <p>STAY ORGANIZED</p>
+            <h2>Wedding Checklist</h2>
+        </div>
+
+        <div class="checklist">
+
+            <label>
+                <input type="checkbox">
+                Choose wedding date
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Select wedding venue
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Book photographer
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Choose wedding dress
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Send invitations
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Arrange catering
+            </label>
+
+        </div>
+
+        <p id="progress">
+            Completed: 0 / 6
+        </p>
+
+    </section>
+
+
+    <!-- Budget Calculator -->
+    <section id="budget" class="section budget-section">
+
+        <div class="section-title">
+            <p>PLAN YOUR MONEY</p>
+            <h2>Wedding Budget Calculator</h2>
+        </div>
+
+        <div class="budget-box">
+
+            <div class="input-group">
+                <label>Venue</label>
+                <input type="number" id="venue" placeholder="Rs.">
+            </div>
+
+            <div class="input-group">
+                <label>Food & Catering</label>
+                <input type="number" id="food" placeholder="Rs.">
+            </div>
+
+            <div class="input-group">
+                <label>Photography</label>
+                <input type="number" id="photo" placeholder="Rs.">
+            </div>
+
+            <div class="input-group">
+                <label>Decoration</label>
+                <input type="number" id="decoration" placeholder="Rs.">
+            </div>
+
+            <button class="btn" onclick="calculateBudget()">
+                Calculate Total
+            </button>
+
+            <h3 id="total">
+                Total: Rs. 0
+            </h3>
+
+        </div>
+
+    </section>
+
+
+    <!-- Gallery -->
+    <section class="section">
+
+        <div class="section-title">
+            <p>OUR INSPIRATION</p>
+            <h2>Wedding Ideas</h2>
+        </div>
+
+        <div class="gallery">
+
+            <div class="gallery-item">💍</div>
+            <div class="gallery-item">🌸</div>
+            <div class="gallery-item">💐</div>
+            <div class="gallery-item">👰</div>
+            <div class="gallery-item">🤵</div>
+            <div class="gallery-item">🎂</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+
+        <div class="section-title">
+            <p>GET IN TOUCH</p>
+            <h2>Let's Plan Your Wedding</h2>
+        </div>
+
+        <form id="contactForm">
+
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <textarea id="message"
+                      placeholder="Tell us about your wedding..."
+                      required></textarea>
+
+            <button type="submit" class="btn">
+                Send Message
+            </button>
+
+        </form>
+
+        <p id="formMessage"></p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>EverAfter 💍</h3>
+
+        <p>
+            Making beautiful moments unforgettable.
+        </p>
+
+        <p>
+            © 2026 EverAfter Wedding Planner
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
